@@ -17,7 +17,27 @@
         </li>
       {% endfor %}
     </ul>
-
     <a href="/app/logout" class="logout">Sair</a>
   </div>
+
+  {% if user.provider === true  %}
+  <div class="content">
+      <strong> Olá, {{ user.name}}</strong>
+      <p>Confira sua agenda abaixo</p>
+      <ul class="providers">
+        {% for appointment in appointments %}
+          <li class="provider">
+            <div>
+              <img src="/files/{{ appointment.user.avatar }}"></img>
+              <strong>{{ appointment.user.name }}</strong>
+            </div>
+            <div>
+              <strong>Data e hora do corte: {{ appointment.date }}</strong>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
 {% endblock %}
