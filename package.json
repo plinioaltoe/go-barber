@@ -9,7 +9,7 @@
     "multer": "^1.4.1",
     "nunjucks": "^3.1.7",
     "pg": "^7.8.1",
-    "sequelize": "^4.42.0",
+    "sequelize": "^5.9.1",
     "session-file-store": "^1.2.0"
   },
   "name": "go-barber",
@@ -27,6 +27,6 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "nodemon": "^1.18.10",
-    "sequelize-cli": "^5.4.0"
+    "sequelize-cli": "^5.5.0"
   }
 }
